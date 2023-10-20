@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
+body{
+    background-color: pink;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+}
+ .container{
+    padding: 1.5em;
+    width: 100%;
+    margin: 0 auto;
+} 
+img{
+    width: 6%;
+    max-width: 100%;
+}
+button, img, input{
+    display: block;
+}
+button, input{
+    width: 100%;
+    padding: 1em .8em;
+    border-radius: 7px;
+    border: none;
+}
+input{
+    font-size: .9rem;
+}
+input:focus{
+    outline: 2px solid rgb(121, 243, 151);;
+}
+ .social-btn{
+    display: flex;
+    align-items: center;
+    padding: 1.2em 1em;
+    justify-content: space-evenly;
+    
+} 
+.social-btn{
+    font-weight: 600;
+
+}
+.social-btn a{
+    color: black;
+}
+ 
+.button{
+    background-color: rgb(121, 243, 151);
+    color: white;
+    font-weight: 600;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+ 
+.grid-item{
+    background-image: url(./image/khaled-ghareeb-3RN7-VXmZ6E-unsplash.jpg);
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 2em .9em 1em;
+    border-radius: 15px;
+}
+ 
+ 
+.grid-item h1{
+    color: white;
+     font-size: 2em;
+     padding: 2em 0 1em 0;
+     
+}
+.grid-item span{
+    font-weight:600
+}
+.input-box-2, button{
+    margin-bottom: 1em;
+    position: relative;
+}
+.view{
+    display: inline;
+    width: fit-content;
+    border: none;
+    background-color: transparent;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 1em;
+    z-index: 1;
+}
+fieldset{
+    padding: 1.2em;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    
+}
+fieldset a{
+    color: rgb(121, 243, 151);;
+    font-weight: 600;
+}
+ 
+fieldset p{
+    color: white;
+    padding-bottom: 1em;
+    font-size: .9rem;
+}
+h5, p{
+    color: white;
+    padding-left: .8em;
+}
+.other-options{
+    text-align: center;
+}
+
+.img-anne{
+    width: 15%;
+    border-radius: 50%;
+
+
+}
+.img-div {
+    display: flex;
+    padding-bottom: 1em;
+    align-items: center; 
+}
+ @media (max-width:800px) {
+    .grid-item{
+        grid-column: 1/3;
+    }
+ }
